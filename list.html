@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="icon.ico">
     <link rel="stylesheet" href="css/list.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -13,46 +14,46 @@
 </head>
 
 <body>
-    <header class="conteiner" id="navpan">
-        <a href="tulga.html" id="logos"><span class="logo">TULGANI TANY</span></a>
-        <nav>
+  <header class="conteiner" id="navpan">
+        <a href="index.html" id="logos"><span class="logo">TULGANI TANY</span></a>
             <ul>
-                <li><a href="tulga.html">БАСТЫ БЕТ</a></li>
-                <li class="active"><a href="list.html">Тұлғалар тізімі</a></li>
+                <li><a href="index.html">БАСТЫ БЕТ</a></li>
+                <li  class="active"><a href="list.html">Тұлғалар тізімі</a></li>
                 <li><a href="contacts.html">Байланыс</a></li>
+                </ul>
                 <div class="box-cont">
-                    <input type="text" placeholder="Тұлғаны ізде" class="search">
-                    <button class="search-btn">
-                        <i class="material-icons">search</i>
-                    </button>
+                    <div class="box-cont2">
+                        <input type="text" id="search-input" placeholder="Тұлғаны ізде" class="search" title="Тұлға есімін қатесіз жаз">
+                            <i class="material-icons">search</i>
+                    </div>
+                        <ul class="search-block__products" id="products"></ul>
                 </div>
-            </ul>
-        </nav>
+        
     </header>
     <div class="cards">
-        <div class="heroes">
+        <div class="batyr">
             <img src="img/hero.png" alt="">
             <a href="batyr.html" class="ick">Батырлар тізімін көру</a>
         </div>
-        <div class="korol">
+        <div class="bileushi">
             <img src="img/korona.png" alt="">
-            <a href="han.html" class="ick">Хандар тізімін көру</a>
+            <a href="han.html" class="ick">Билеушілер тізімін көру</a>
         </div>
         <div class="galym">
             <img src="img/science.png" alt="">
             <a href="galym.html" class="ick">Ғалымдар тізімін көру</a>
         </div>
-        <div class="writers">
+        <div class="writersandaqyns">
             <img src="img/write.png" alt="">
-            <a href="writer.html" class="ick">Жазушылар тізімін көру</a>
+            <a href="writer.html" class="ick">Жазушы, ақындар тізімін көру</a>
         </div>
-        <div class="arters">
+        <div class="oner">
             <img src="img/art.png" alt="">
             <a href="art.html" class="ick">Өнерпаздар тізімін көру</a>
         </div>
     </div>
  <div class="footer">
-        <p>© 2025 Tulganitany.Барлық құқықтар қорғалған.</p>
+        <p>© 2025 Tulganitany.          Барлық құқықтар қорғалған.</p>
         <div class="social-icons">
 
             <a href="https://wa.me/77758837493" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
@@ -60,6 +61,7 @@
             <a href="https://t.me/qwer04" target="_blank" class="tg"><i class="fa-brands fa-telegram" ></i></a>
         </div>
     </div>
+    <script src="js/list.js"></script>
 </body>
 
 </html>
