@@ -5,29 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/batyr.css">
+        <link rel="icon" href="icon.ico">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>liststulga</title>
+    <title>batyr</title>
 </head>
 
 <body>
-    <header class="conteiner" id="navpan">
-        <a href="tulga.html" id="logos"><span class="logo">TULGANI TANY</span></a>
-        <nav>
+   <header class="conteiner" id="navpan">
+        <a href="index.html" id="logos"><span class="logo">TULGANI TANY</span></a>
             <ul>
-                <li><a href="tulga.html">БАСТЫ БЕТ</a></li>
-                <li class="active"><a href="list.html">Тұлғалар тізімі</a></li>
+                <li><a href="index.html">БАСТЫ БЕТ</a></li>
+                <li  class="active"><a href="list.html">Тұлғалар тізімі</a></li>
                 <li><a href="contacts.html">Байланыс</a></li>
+                </ul>
                 <div class="box-cont">
-                    <input type="text" placeholder="Тұлғаны ізде" class="search">
-                    <button class="search-btn">
-                        <i class="material-icons">search</i>
-                    </button>
+                    <div class="box-cont2">
+                        <input type="text" id="search-input" placeholder="Тұлғаны ізде" class="search" title="Тұлға есімін қатесіз жаз">
+                            <i class="material-icons">search</i>
+                    </div>
+                        <ul class="search-block__products" id="products"></ul>
                 </div>
-            </ul>
-        </nav>
+        
     </header>
     <div class="lastpage">
         <a href="list.html" class="lastpagebtn">
@@ -36,70 +38,70 @@
         </a>
     </div>
     <div class="cards">
-        <div class="shyngys">
+        <div class="tulga1">
             <img src="img/koby.png" alt="">
             <h2>Қобыланды батыр</h2>
             <p>Аты аңызға айналған халық батыры. Шыққан тегі – Қыпшақ</p>
             <a href="list.html" class="cardbtn">Тұлғаның профильін көру</a>
 
         </div>
-        <div class="kerei">
+        <div class="tulga2">
             <img src="img/nauryz.png" alt="">
             <h2>Наурызбай батыр</h2>
             <p>Қазақ елінің жоңғарларға қарсы соғысындағы көрнекті батыр</p>
             <a class="cardbtn">Тұлғаның профильін көру</a>
 
         </div>
-        <div class="abylai">
+        <div class="tulga3">
             <img src="img/kabanbai.png" alt="">
             <h2>Қабанбай батыр</h2>
             <p>Батыр, дарынды қолбасшы. Азан шақырып қойылған есімі — Ерасыл</p>
             <a class="cardbtn">Тұлғаның профильін көру</a>
 
         </div>
-        <div class="kasym">
+        <div class="tulga4">
             <img src="img/bogenbai.png" alt="">
             <h2>Бөгенбай батыр</h2>
             <p>Абылай хан тұсындағы батыр, атақты қолбасшы</p>
             <a class="cardbtn">Тұлғаның профильін көру</a>
 
         </div>
-        <div class="tauekel">
+        <div class="tulga5">
             <img src="img/syrym.png" alt="">
             <h2>Сырым Датұлы</h2>
             <p>1783—1797 жылдарындағы көтерілісінің көрнекті басшысы, атақты батыр</p>
             <a class="cardbtn">Тұлғаның профильін көру</a>
 
         </div>
-        <div class="tauke">
-            <img src="img/tauke.png" alt="">
-            <h2>Тәуке хан</h2>
-            <p>3 жүздің басын қосып, Қой үстіне босторғай жұмыртқалаған замандағы Хан</p>
+        <div class="tulga6">
+            <img src="img/mahambet.png" alt="">
+            <h2>Махамбет Өтемісұлы</h2>
+            <p>Махамбет Өтемісұлы — халық бостандығы үшін күрескен батыр</p>
             <a class="cardbtn">Тұлғаның профильін көру</a>
         </div>
-        <div class="esim">
-            <img src="img/esim.png" alt="">
-            <h2>Есім хан</h2>
-            <p>"Еңсегей бойлы ер Есім" деген атпен әйгілі хан</p>
-            <a class="cardbtn">Тұлғаның профильін көру</a>
-
-        </div>
-        <div class="haqnazar">
-            <img src="img/haqnazar.png" alt="">
-            <h2>Хақназар хан</h2>
-            <p>Қазақ хандығын 42 жыл билеген хан </p>
+        <div class="tulga7">
+            <img src="img/ospan.png" alt="">
+            <h2>Оспан батыр</h2>
+            <p>Шығыс Түркістанның тәуелсіздігі үшін күрескен ұлт азаттық қозғалысының көсемі</p>
             <a class="cardbtn">Тұлғаның профильін көру</a>
 
         </div>
-        <div class="zhangir">
-            <img src="img/zhangir.png" alt="">
-            <h2>Жәңгір хан</h2>
-            <p>600 сарбазбен жоңғарлардың 50 мыңдық әскерін жеңді</p>
+        <div class="tulga8">
+            <img src="img/rai.png" alt="">
+            <h2>Райымбек батыр</h2>
+            <p>Қазақ батыры, дарынды қолбасшы, Ұлы жүз Албан руынан шыққан </p>
+            <a class="cardbtn">Тұлғаның профильін көру</a>
+
+        </div>
+        <div class="tulga9">
+            <img src="img/bauyr.png" alt="">
+            <h2>Бауыржан Момышұлы</h2>
+            <p>Қазақтың әйгілі әскери қолбасшысы, Кеңес одағының батыры</p>
             <a class="cardbtn">Тұлғаның профильін көру</a>
         </div>
     </div>
     <div class="footer">
-        <p>© 2025 Tulganitany.Барлық құқықтар қорғалған.</p>
+        <p>© 2025 Tulganitany.         Барлық құқықтар қорғалған.</p>
         <div class="social-icons">
 
             <a href="https://wa.me/77758837493" target="_blank" class="whatsapp"><i
@@ -109,6 +111,7 @@
             <a href="https://t.me/qwer04" target="_blank" class="tg"><i class="fa-brands fa-telegram"></i></a>
         </div>
     </div>
+    <script src="js/list.js"></script>
 </body>
 
 </html>
