@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+    height: 100%;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+
+}
+/* shapka */
+.up {
+    display:flex;
+    text-align:center;
+    justify-content: space-between;
+   background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+}
+.lastpage>.lastpagebtn {
+    display:flex;
+       width:100px;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    padding:0 auto;
+    height:15px;
+    position:relative;
+    top:4px;
+}
+.lastpage>.lastpagebtn>.fa-solid {
+   font-size:15px;
+ 
+}
+.lastpage>.lastpagebtn {
+    background-color: #7F1B1B;
+    border: none;
+    border-radius: 30px;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    border: none;
+    box-shadow:
+        0 0 10px #ff4d4d,
+        0 0 15px #ff1a1a,
+        0 0 20px #ff0000;
+    transition: 0.3s ease;
+    font-size:18px;
+}
+.lastpage>.lastpagebtn>p {
+    margin-left:10px;
+    font-size:17px;
+    margin-bottom:3px;
+}
+
+
+.lastpage>.lastpagebtn:hover {
+         transform: scale(1.05);
+    box-shadow:
+        0 0 10px #ff4d4d,
+        0 0 20px #ff1a1a,
+        0 0 30px #ff0000;
+}
+
+
+a:not(.material-icons) {
+
+    text-decoration: none;
+    color: white;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+
+    font-weight: 600;
+    background-color: #1B7F5D;
+    border-radius: 20px;
+    padding: 5.5px 10px;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+.up>h2 {
+   margin-right:520px;
+}
+
+
+
+/* shapka */
+.shapka {
+    display:flex;
+    justify-content:space-between;
+}
+.shapka>img {
+    width:450px;
+    height:400px;
+    border-radius: 50%;
+    background-color:#4b2e1e;
+    margin-left: 100px;
+    margin-top:110px;
+}
+.shapka>.inf>h2 {
+    color: #fff;
+    text-shadow:
+        0 0 10px #7F1B1B,
+        0 0 10px #7F1B1B,
+        0 0 10px #7F1B1B,
+        0 0 10px #7F1B1B;
+        font-size:50px;
+        width:500px;
+        position: relative;
+        left:100px;
+        top:100px;
+        
+}
+.shapka .inf {
+    margin-top:30px;
+    margin-right:200px;
+    width:700px;
+}
+
+.shapka>.inf>.text {
+   position:relative;
+   top:120px;
+   right:-100px;
+   
+}
+.shapka .inf .text p {
+    margin-block:30px;
+    font-size:25px;
+}
+.shapka .inf .text p  .fa-solid{
+    margin-right:15px;
+    font-size:22px;
+}
+.shapka .inf .text p  .fa-house{
+   color:#1B7F5D;
+}
+.shapka .inf .text p  .fa-person{
+   color:#1B7F5D;
+}
+.shapka .inf .text p  .fa-book{
+   color:#1B7F5D;
+}
+.shapka .inf .text p  .fa-calendar-days{
+   color:#1B7F5D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cards */
+
+.cards {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 колонки */
+    justify-content: center;
+    text-align: center;
+        margin-left:0px;
+
+}
+
+.cards>.tulga1>img,
+.cards>.tulga2>img,
+.cards>.tulga3>img,
+.cards>.tulga4>img,
+.cards>.tulga6>img,
+.cards>.tulga5>img,
+.cards>.tulga8>img,
+.cards>.tulga7>img,
+.cards>.tulga9>img
+ {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+
+
+}
+
+
+.cards>.tulga1,
+.cards>.tulga2,
+.cards>.tulga3,
+.cards>.tulga4,
+.cards>.tulga6,
+.cards>.tulga5,
+.cards>.tulga8,
+.cards>.tulga7,
+.cards>.tulga9
+{
+    text-align: center;
+    background-color: #b65521;
+;
+        border: none;
+    border-radius: 15px;
+    box-shadow:
+        0 0 10px #4b2e1e,
+        0 0 15px #4b2e1e,
+        0 0 20px #4b2e1e;
+        transition: 0.3s ease;
+        
+        flex: 1 1 250px;
+
+    width:300px;
+    margin: 70px auto;
+
+        height: 470px;
+}
+
+.cards>.tulga1>h2,
+.cards>.tulga2>h2,
+.cards>.tulga3>h2,
+.cards>.tulga4>h2,
+.cards>.tulga6>h2,
+.cards>.tulga5>h2,
+.cards>.tulga8>h2,
+.cards>.tulga7>h2,
+.cards>.tulga9>h2 
+
+{
+      color: #fff;
+    text-shadow:
+        0 0 10px #7F1B1B,
+        0 0 10px #7F1B1B,
+        0 0 10px #7F1B1B,
+        0 0 10px #7F1B1B;
+            font-size: 28px;
+
+}
+.cards>.tulga3>h2 {
+    font-size:29px;
+}
+
+.cards>.tulga1>p,
+.cards>.tulga2>p,
+.cards>.tulga3>p,
+.cards>.tulga4>p,
+.cards>.tulga6>p,
+.cards>.tulga5>p,
+.cards>.tulga8>p,
+.cards>.tulga7>p,
+.cards>.tulga9>p 
+{
+    text-align: center;
+    width: 300px;
+  position:relative;
+  top:20px;
+    margin: 0 auto;
+}
+.cards>.tulga3>p {
+    position:relative;
+    top:25px;
+}
+.cards>.tulga1>.cardbtn,
+.cards>.tulga2>.cardbtn,
+.cards>.tulga3>.cardbtn,
+.cards>.tulga4>.cardbtn,
+.cards>.tulga6>.cardbtn,
+.cards>.tulga5>.cardbtn,
+.cards>.tulga8>.cardbtn,
+.cards>.tulga7>.cardbtn,
+.cards>.tulga9>.cardbtn
+{
+    margin-top:55px;
+    color: #fff;
+    background-color: #7F1B1B;
+    text-decoration: none !important;
+    border: none;
+    border-radius: 30px;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    border: none;
+    box-shadow:
+        0 0 10px #ff4d4d,
+        0 0 15px #ff1a1a,
+        0 0 20px #ff0000;
+    transition: 0.3s ease;
+}
+.cards>.tulga3>.cardbtn {
+    margin-top:54px;
+}
+.cards>.tulga3>.cardbtn {
+    margin-top:53px;
+}
+.cards>.tulga4>.cardbtn {
+    margin-top:55px;
+}
+.cards>.tulga1>.cardbtn:hover,
+.cards>.tulga2>.cardbtn:hover,
+.cards>.tulga3>.cardbtn:hover,
+.cards>.tulga4>.cardbtn:hover,
+.cards>.tulga6>.cardbtn:hover,
+.cards>.tulga5>.cardbtn:hover,
+.cards>.tulga8>.cardbtn:hover,
+.cards>.tulga7>.cardbtn:hover,
+.cards>.tulga9>.cardbtn:hover
+{
+        transform: scale(1.05);
+    box-shadow:
+        0 0 20px #ff4d4d,
+        0 0 30px #ff1a1a,
+        0 0 40px #ff0000;
+}
+.cards>.tulga1:hover,
+.cards>.tulga2:hover,
+.cards>.tulga3:hover,
+.cards>.tulga4:hover,
+.cards>.tulga6:hover,
+.cards>.tulga5:hover,
+.cards>.tulga8:hover,
+.cards>.tulga7:hover,
+.cards>.tulga9:hover
+ {
+    transform: translateY(-20px);
+}
