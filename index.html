@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="icon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
@@ -14,21 +15,20 @@
 
 <body>
     <header class="conteiner" id="navpan">
-        <a href="tulga.html" id="logos"><span class="logo">TULGANI TANY</span></a>
-        <nav>
+        <a href="index.html" id="logos"><span class="logo">TULGANI TANY</span></a>
             <ul>
-                <li class="active"><a href="tulga.html">БАСТЫ БЕТ</a></li>
+                <li class="active"><a href="index.html">БАСТЫ БЕТ</a></li>
                 <li><a href="list.html">Тұлғалар тізімі</a></li>
                 <li><a href="contacts.html">Байланыс</a></li>
+                </ul>
                 <div class="box-cont">
-                    <input type="text" placeholder="Тұлғаны ізде" class="search">
-                    <button class="search-btn">
-                        <i class="material-icons">search</i>
-                    </button>
+                    <div class="box-cont2">
+                        <input type="text" id="search-input" placeholder="Тұлғаны ізде" class="search" title="Тұлға есімін қатесіз жаз">
+                            <i class="material-icons">search</i>
+                    </div>
+                        <ul class="search-block__products" id="products"></ul>
                 </div>
-
-            </ul>
-        </nav>
+        
     </header>
     <div class="hero">
         <h2>Қазақстанды ұлы еткен - оның ұлы тұлғалары</h2>
@@ -40,10 +40,10 @@
     </div>
     <div class="cards">
         <div class="abai">
-            <img src="img/abai.png" alt="">
+            <img src="img/abai2.png" alt="">
             <h2>Абай Құнанбайұлы</h2>
             <p>Жазушы, ақын, ағартушы, ойшыл, ұлы тұлға</p>
-            <button class="cardbtn">Тұлғаның профильін көру</button>
+            <a href="abai.html" class="cardbtn">Тұлғаның профильін көру</a>
 
         </div>
         <div class="kobylandy">
@@ -78,16 +78,17 @@
         </div>
 
     </div>
+    <div class="testbg"></div>
     <div class="test">
+        <img src="img/test2.png" alt="">
 
         <h2>Біліміңді тексергің келеді ме?</h2>
-        <h3>Тұлғалар жайлы <span>мини тест өт!</span></h3>
-        <img src="img/test.png" alt="">
-        <button>ТЕСТ ӨТУ</button>
+        <h3>Тұлғалар жайлы мини тест өт! Өз біліміңді тексеріп, тұлғалар жайлы сұрақтарға жауап беріп, жоғары ұпай жина</h3>
+        <a href="https://wayground.com/admin/quiz/66093a6ef505a0751db4f567/khazakh-tulghalary" class="button" target="_blank">ТЕСТ ӨТУ</a>
     </div>
 
     <div class="footer">
-        <p>© 2025 Tulganitany.Барлық құқықтар қорғалған.</p>
+        <p>© 2025 Tulganitany.       Барлық құқықтар қорғалған.</p>
         <div class="social-icons">
 
             <a href="https://wa.me/77758837493" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
@@ -95,6 +96,7 @@
             <a href="https://t.me/qwer04" target="_blank" class="tg"><i class="fa-brands fa-telegram" ></i></a>
         </div>
     </div>
+    <script src="js/list.js"></script>
 </body>
 
 </html>
