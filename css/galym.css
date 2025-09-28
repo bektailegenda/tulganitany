@@ -47,18 +47,15 @@ header {
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(5px);
     height: 40px;
-
-    text-shadow:
-        0 0 5px #1B7F5D,
-        0 0 10px #1B7F5D,
-        0 0 20px #1B7F5D,
-        0 0 40px #1B7F5D;
+    position:relative;
+    z-index:2;
 
 }
 
 header>#logos {
-    cursor: pointer;
+
     all: unset;
+    cursor: pointer;
     font-size: 40px;
     font-weight: 800;
     position: relative;
@@ -71,17 +68,16 @@ header>#logos {
         0 0 40px #1B7F5D;
 }
 
-header>nav {
-    float: right;
-}
 
-header>nav>ul {
+
+header>ul {
 
     position: relative;
-    right: 150px;
+    right:20px;
+    bottom:50px;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     text-transform: uppercase;
 }
 
@@ -90,13 +86,14 @@ li {
     padding: 0 40px;
 }
 
-header>nav>ul>li>a:hover {
+header>ul>li>a:hover {
     transform: scale(1.2);
 }
 
-.box-cont {
-    height: 30px;
-    margin-top: -5px;
+.box-cont .box-cont2 {
+    position:relative;
+    height: 35px;
+    margin-top: -90px;
     display: flex;
     align-items: center;
     border: 3px solid #1B7F5D;
@@ -104,39 +101,82 @@ header>nav>ul>li>a:hover {
     padding: 5px 15px;
     background-color: #fff;
     /* или transparent */
-    width: 230px;
-    margin-left: 30px;
+    width: 260px;
+    margin-left: 1100px;
+
 }
 
 .search {
     flex: 1;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 17px;
     font-family: "Roboto Slab", serif;
     color: #424242;
     background: transparent;
+    cursor:text;
 }
 
-.search-btn {
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    padding: 0;
-    margin-right: 10px;
-    margin-top: 2px;
-}
 
-.search-btn .material-icons {
-    font-size: 30px;
-    color: #1B7F5D;
+.box-cont .box-cont2 .material-icons {
+    font-size: 40px;
+    color: rgb(99, 251, 99);
     transition: 0.2s;
+    pointer-events: none;
+
 }
 
-.search-btn:hover .material-icons {
-    transform: scale(1.3);
-    color: #2980b9;
+.search-block__products {
+z-index:1000;
+    position: relative;
+    list-style: none;
+    left:1100px;
+    max-height: 200px;
+    overflow: auto;
+    background-color: white;
+    top: 6px;
+    border-radius: 5px;
+    width: 290px;
+    opacity: 0;
+    visibility: hidden;
+    border: 3px solid #1B7F5D;
 }
+
+.search-block__products li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-block__products::-webkit-scrollbar {
+    width: 7px;
+    height: 5px;
+}
+
+.search-block__products::-webkit-scrollbar-thumb {
+    background:rgb(99, 251, 99);
+}
+
+.search-block__products li a {
+    text-decoration: none !important;
+    font-size: 17px !important;
+    font-family: "Roboto Slab", serif !important;
+    color: #424242 !important;
+    background-color: transparent !important;
+    text-shadow: none !important;
+}
+
+.search-block__products li:hover {
+    background-color: #e6f2ff;
+}
+
+.box-cont.active-search .search-block__products {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
 
 
 
@@ -151,8 +191,8 @@ header>nav>ul>li>a:hover {
     justify-content: center;
     align-items: center;
     padding:5px;
-    margin-top:25px;
-    margin-left:25px;
+    margin-top:40px;
+    margin-left:40px;
 }
 .lastpage>.lastpagebtn {
     color: #fff;
@@ -181,11 +221,11 @@ font-size:25px;
 margin-left:1px;
 }
 .lastpage>.lastpagebtn:hover {
-         transform: scale(1.1);
+          transform: scale(1.05);
     box-shadow:
-        0 0 20px #ff4d4d,
-        0 0 30px #ff1a1a,
-        0 0 40px #ff0000;
+        0 0 10px #ff4d4d,
+        0 0 20px #ff1a1a,
+        0 0 30px #ff0000;
 }
 
 
@@ -224,21 +264,21 @@ margin-left:1px;
     /* 3 колонки */
     justify-content: center;
     text-align: center;
-    position:relative;
-    left:60px;
+     margin-left:65px;
+
 }
 
-.cards>.shyngys>img,
-.cards>.kerei>img,
-.cards>.abylai>img,
-.cards>.kasym>img,
-.cards>.tauke>img,
-.cards>.tauekel>img,
-.cards>.haqnazar>img,
-.cards>.esim>img,
-.cards>.zhangir>img
+.cards>.tulga1>img,
+.cards>.tulga2>img,
+.cards>.tulga3>img,
+.cards>.tulga4>img,
+.cards>.tulga6>img,
+.cards>.tulga5>img,
+.cards>.tulga8>img,
+.cards>.tulga7>img,
+.cards>.tulga9>img
  {
-    width: 280px;
+    width: 230px;
     height: 250px;
      margin-top:20px;
   -webkit-mask-image: 
@@ -253,15 +293,15 @@ margin-left:1px;
 
 }
 
-.cards>.shyngys,
-.cards>.kerei,
-.cards>.abylai,
-.cards>.kasym,
-.cards>.tauke,
-.cards>.tauekel,
-.cards>.haqnazar,
-.cards>.esim,
-.cards>.zhangir
+.cards>.tulga1,
+.cards>.tulga2,
+.cards>.tulga3,
+.cards>.tulga4,
+.cards>.tulga6,
+.cards>.tulga5,
+.cards>.tulga8,
+.cards>.tulga7,
+.cards>.tulga9
 {
     text-align: center;
     background-color: rgb(29, 143, 11);
@@ -278,17 +318,26 @@ margin-left:1px;
     width:350px;
     margin: 70px 30px;
     height: 470px;
+
+}
+.cards>.tulga9>img {
+    width:300px;
 }
 
-.cards>.shyngys>h2,
-.cards>.kerei>h2,
-.cards>.abylai>h2,
-.cards>.kasym>h2,
-.cards>.tauke>h2,
-.cards>.tauekel>h2,
-.cards>.haqnazar>h2,
-.cards>.esim>h2,
-.cards>.zhangir>h2 
+.cards>.tulga1>img {
+    width:250px;
+}
+
+
+.cards>.tulga1>h2,
+.cards>.tulga2>h2,
+.cards>.tulga3>h2,
+.cards>.tulga4>h2,
+.cards>.tulga6>h2,
+.cards>.tulga5>h2,
+.cards>.tulga8>h2,
+.cards>.tulga7>h2,
+.cards>.tulga9>h2 
 
 {
       color: #fff;
@@ -297,38 +346,56 @@ margin-left:1px;
         0 0 10px #7F1B1B,
         0 0 10px #7F1B1B,
         0 0 10px #7F1B1B;
-            font-size: 30px;
-
-}
-
-.cards>.shyngys>p,
-.cards>.kerei>p,
-.cards>.abylai>p,
-.cards>.kasym>p,
-.cards>.tauke>p,
-.cards>.tauekel>p,
-.cards>.haqnazar>p,
-.cards>.esim>p,
-.cards>.zhangir>p 
+        font-size: 30px;
+        
+    }
+    .cards>.tulga2>h2 {
+        font-size:27px;
+    }
+     .cards>.tulga7>h2 {
+        font-size:28.5px;
+    }
+    
+    .cards>.tulga6>h2 {
+    font-size:28px;
+    }
+    .cards>.tulga9>h2 {
+    font-size:28px;
+    }
+    
+.cards>.tulga1>p,
+.cards>.tulga2>p,
+.cards>.tulga3>p,
+.cards>.tulga4>p,
+.cards>.tulga6>p,
+.cards>.tulga5>p,
+.cards>.tulga8>p,
+.cards>.tulga7>p,
+.cards>.tulga9>p 
 {
     text-align: center;
     width: 300px;
   position:relative;
-  top:10px;
+  top:20px;
     margin: 0 auto;
 }
 
-.cards>.shyngys>.cardbtn,
-.cards>.kerei>.cardbtn,
-.cards>.abylai>.cardbtn,
-.cards>.kasym>.cardbtn,
-.cards>.tauke>.cardbtn,
-.cards>.tauekel>.cardbtn,
-.cards>.haqnazar>.cardbtn,
-.cards>.esim>.cardbtn,
-.cards>.zhangir>.cardbtn
+
+
+
+
+
+.cards>.tulga1>.cardbtn,
+.cards>.tulga2>.cardbtn,
+.cards>.tulga3>.cardbtn,
+.cards>.tulga4>.cardbtn,
+.cards>.tulga6>.cardbtn,
+.cards>.tulga5>.cardbtn,
+.cards>.tulga8>.cardbtn,
+.cards>.tulga7>.cardbtn,
+.cards>.tulga9>.cardbtn
 {
-    margin-top:35px;
+    margin-top:50px;
     color: #fff;
     background-color: #7F1B1B;
     text-decoration: none !important;
@@ -346,37 +413,61 @@ margin-left:1px;
         0 0 20px #ff0000;
     transition: 0.3s ease;
 }
-.cards>.abylai>.cardbtn {
+.cards>.tulga2>.cardbtn {
+        margin-top:54px;
+
+}
+.cards>.tulga6>.cardbtn {
+    margin-top:56px;
+}
+.cards>.tulga7>.cardbtn {
     margin-top:54px;
 }
-.cards>.kasym>.cardbtn {
+.cards>.tulga5>.cardbtn {
+        margin-top:55px;
+
+}
+.cards>.tulga3>img {
+    width:230px;
+}
+.cards>.tulga4>img {
+    width:230px;
+}
+.cards>.tulga3>h2 {
+font-size: 25px;
+}
+
+.cards>.tulga3>.cardbtn {
+    margin-top:54px;
+}
+.cards>.tulga4>.cardbtn {
     margin-top:55px;
 }
-.cards>.shyngys>.cardbtn:hover,
-.cards>.kerei>.cardbtn:hover,
-.cards>.abylai>.cardbtn:hover,
-.cards>.kasym>.cardbtn:hover,
-.cards>.tauke>.cardbtn:hover,
-.cards>.tauekel>.cardbtn:hover,
-.cards>.haqnazar>.cardbtn:hover,
-.cards>.esim>.cardbtn:hover,
-.cards>.zhangir>.cardbtn:hover
+.cards>.tulga1>.cardbtn:hover,
+.cards>.tulga2>.cardbtn:hover,
+.cards>.tulga3>.cardbtn:hover,
+.cards>.tulga4>.cardbtn:hover,
+.cards>.tulga6>.cardbtn:hover,
+.cards>.tulga5>.cardbtn:hover,
+.cards>.tulga8>.cardbtn:hover,
+.cards>.tulga7>.cardbtn:hover,
+.cards>.tulga9>.cardbtn:hover
 {
-        transform: scale(1.2);
+        transform: scale(1.05);
     box-shadow:
         0 0 20px #ff4d4d,
         0 0 30px #ff1a1a,
         0 0 40px #ff0000;
 }
-.cards>.shyngys:hover,
-.cards>.kerei:hover,
-.cards>.abylai:hover,
-.cards>.kasym:hover,
-.cards>.tauke:hover,
-.cards>.tauekel:hover,
-.cards>.haqnazar:hover,
-.cards>.esim:hover,
-.cards>.zhangir:hover
+.cards>.tulga1:hover,
+.cards>.tulga2:hover,
+.cards>.tulga3:hover,
+.cards>.tulga4:hover,
+.cards>.tulga6:hover,
+.cards>.tulga5:hover,
+.cards>.tulga8:hover,
+.cards>.tulga7:hover,
+.cards>.tulga9:hover
  {
     transform: translateY(-20px);
 }
