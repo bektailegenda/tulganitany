@@ -41,16 +41,18 @@ a:not(.material-icons) {
 .active>a {
     box-shadow: 10px 5px 5px white;
 }
-
 header {
     padding: 40px 0;
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(5px);
     height: 40px;
+    position:relative;
+    z-index:2;
 
 }
 
 header>#logos {
+
     all: unset;
     cursor: pointer;
     font-size: 40px;
@@ -65,17 +67,16 @@ header>#logos {
         0 0 40px #1B7F5D;
 }
 
-header>nav {
-    float: right;
-}
 
-header>nav>ul {
+
+header>ul {
 
     position: relative;
-    right: 150px;
+    right:20px;
+    bottom:50px;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     text-transform: uppercase;
 }
 
@@ -84,13 +85,14 @@ li {
     padding: 0 40px;
 }
 
-header>nav>ul>li>a:hover {
+header>ul>li>a:hover {
     transform: scale(1.2);
 }
 
-.box-cont {
-    height: 30px;
-    margin-top: -5px;
+.box-cont .box-cont2 {
+    position:relative;
+    height: 35px;
+    margin-top: -90px;
     display: flex;
     align-items: center;
     border: 3px solid #1B7F5D;
@@ -98,38 +100,78 @@ header>nav>ul>li>a:hover {
     padding: 5px 15px;
     background-color: #fff;
     /* или transparent */
-    width: 230px;
-    margin-left: 30px;
+    width: 260px;
+    margin-left: 1100px;
+
 }
 
 .search {
     flex: 1;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 17px;
     font-family: "Roboto Slab", serif;
     color: #424242;
     background: transparent;
+    cursor:text;
 }
 
-.search-btn {
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    padding: 0;
-    margin-right: 10px;
-    margin-top: 2px;
-}
 
-.search-btn .material-icons {
-    font-size: 30px;
-    color: #1B7F5D;
+.box-cont .box-cont2 .material-icons {
+    font-size: 40px;
+    color: rgb(99, 251, 99);
     transition: 0.2s;
+    pointer-events: none;
+
 }
 
-.search-btn:hover .material-icons {
-    transform: scale(1.3);
-    color: #2980b9;
+.search-block__products {
+z-index:1000;
+    position: relative;
+    list-style: none;
+    left:1100px;
+    max-height: 200px;
+    overflow: auto;
+    background-color: white;
+    top: 6px;
+    border-radius: 5px;
+    width: 290px;
+    opacity: 0;
+    visibility: hidden;
+    border: 3px solid #1B7F5D;
+}
+
+.search-block__products li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-block__products::-webkit-scrollbar {
+    width: 7px;
+    height: 5px;
+}
+
+.search-block__products::-webkit-scrollbar-thumb {
+    background:rgb(99, 251, 99);
+}
+
+.search-block__products li a {
+    text-decoration: none !important;
+    font-size: 17px !important;
+    font-family: "Roboto Slab", serif !important;
+    color: #424242 !important;
+    background-color: transparent !important;
+    text-shadow: none !important;
+}
+
+.search-block__products li:hover {
+    background-color: #e6f2ff;
+}
+
+.box-cont.active-search .search-block__products {
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -186,6 +228,10 @@ header>nav>ul>li>a:hover {
         0 0 7px black,
         0 0 7px black,
         0 0 7px black;
+        padding-top:10px;
+        height:50px;
+        width:1450px;
+        margin-inline:auto;
 }
 
 .contacts>.social>.whatsapp,
